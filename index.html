@@ -4,6 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sainath Wade | QA Engineer Portfolio</title>
+    
+    <!-- 
+      ====================================================
+      PORTFOLIO CONFIGURATION 
+      Update your variables here once. The page will 
+      automatically inject them everywhere they are needed!
+      ====================================================
+    -->
+    <script>
+        const CONFIG = {
+            email: "sainathwade1999@gmail.com",
+            phone: "+91 9766271154",
+            location: "Pune, India",
+            linkedinUrl: "https://linkedin.com/in/sainathwade-qa",
+            githubUrl: "https://github.com/sainathwade21",
+            resumeFile: "SainathW_QA.pdf",
+            formspreeId: "https://formspree.io/f/xlgygbzg"
+        };
+    </script>
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -26,6 +46,7 @@
 </head>
 <body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 font-sans antialiased transition-colors duration-300 selection:bg-indigo-500 selection:text-white relative">
 
+    <!-- Sticky Navigation Bar -->
     <nav class="sticky top-0 z-50 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 px-4 py-3 shadow-sm">
         <div class="max-w-4xl mx-auto flex justify-between items-center">
             <a href="#" class="font-mono text-sm tracking-wider font-bold text-indigo-600 dark:text-indigo-400 hover:opacity-80 transition-opacity">SW.TESTING //</a>
@@ -43,13 +64,14 @@
                     <span class="dark:hidden"><i class="fas fa-moon text-indigo-600"></i></span>
                     <span class="hidden dark:inline"><i class="fas fa-sun text-amber-400"></i></span>
                 </button>
-                <a href="SainathWade_QA.pdf" download class="hidden sm:flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition-colors shadow-sm">
+                <a href="#" data-set-href="resumeFile" download class="hidden sm:flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition-colors shadow-sm">
                     <i class="fas fa-download"></i> Resume
                 </a>
             </div>
         </div>
     </nav>
 
+    <!-- Header / Hero Section -->
     <header class="max-w-4xl mx-auto px-4 pt-16 pb-12 reveal">
         <div class="space-y-4 max-w-3xl">
             <span class="inline-flex items-center gap-1.5 bg-emerald-500/10 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-500/20 dark:border-emerald-500/30">
@@ -61,13 +83,13 @@
                 I am a QA Engineer with around 2 years of experience testing web and mobile apps in Agile teams. I focus on finding bugs early, writing reliable automated tests, checking APIs, and making sure software releases go smoothly without breaking existing features.
             </p>
             <div class="flex flex-wrap gap-4 pt-2 text-sm text-zinc-500 dark:text-zinc-400 items-center">
-                <a href="mailto:sainathwade1999@gmail.com" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-1.5"><i class="fas fa-envelope"></i> sainathwade1999@gmail.com</a>
+                <a href="#" data-set-mailto="email" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-1.5"><i class="fas fa-envelope"></i> <span data-set-text="email"></span></a>
                 <span class="hidden sm:inline text-zinc-300 dark:text-zinc-700">|</span>
-                <a href="tel:+919766271154" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-1.5"><i class="fas fa-phone"></i> +91 9766271154</a>
+                <a href="#" data-set-tel="phone" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-1.5"><i class="fas fa-phone"></i> <span data-set-text="phone"></span></a>
                 <span class="hidden sm:inline text-zinc-300 dark:text-zinc-700">|</span>
                 <div class="flex gap-3 text-base">
-                    <a href="https://linkedin.com/in/sainathwade-qa" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" data-set-href="linkedinUrl" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" data-set-href="githubUrl" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
@@ -75,6 +97,7 @@
 
     <main class="max-w-4xl mx-auto px-4 py-8 space-y-20">
 
+        <!-- Upgraded Technical Arsenal Grid -->
         <section id="skills" class="scroll-mt-24 reveal">
             <h2 class="text-xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2 mb-6 text-zinc-900 dark:text-zinc-50 flex items-center gap-2">
                 <i class="fas fa-cube text-indigo-500"></i> Technical Arsenal
@@ -126,6 +149,7 @@
             </div>
         </section>
 
+        <!-- Professional Experience Core -->
         <section id="experience" class="scroll-mt-24 space-y-6 reveal">
             <h2 class="text-xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2 text-zinc-900 dark:text-zinc-50 flex items-center gap-2">
                 <i class="fas fa-briefcase text-indigo-500"></i> Work Experience
@@ -174,12 +198,14 @@
             </div>
         </section>
 
+        <!-- Project Highlights Showcase -->
         <section id="projects" class="scroll-mt-24 space-y-6 reveal">
             <h2 class="text-xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2 text-zinc-900 dark:text-zinc-50 flex items-center gap-2">
                 <i class="fas fa-folder-open text-indigo-500"></i> Project Showcases
             </h2>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Project 1 -->
                 <div class="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
                     <div>
                         <div class="flex justify-between items-start gap-2 mb-3">
@@ -192,6 +218,7 @@
                     </div>
                 </div>
 
+                <!-- Project 2 -->
                 <div class="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
                     <div>
                         <div class="flex justify-between items-start gap-2 mb-3">
@@ -206,12 +233,14 @@
             </div>
         </section>
 
+        <!-- Education & Certifications -->
         <section id="education" class="scroll-mt-24 reveal">
             <h2 class="text-xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2 mb-6 text-zinc-900 dark:text-zinc-50 flex items-center gap-2">
                 <i class="fas fa-graduation-cap text-indigo-500"></i> Education & Certifications
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 
+                <!-- Certification -->
                 <div class="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 p-5 shadow-sm flex items-start gap-4 hover:-translate-y-1 transition-transform">
                     <div class="w-10 h-10 rounded-full bg-emerald-50 dark:bg-emerald-500/10 flex items-center justify-center text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-1">
                         <i class="fas fa-certificate text-lg"></i>
@@ -223,6 +252,7 @@
                     </div>
                 </div>
 
+                <!-- Degree -->
                 <div class="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 p-5 shadow-sm flex items-start gap-4 hover:-translate-y-1 transition-transform">
                     <div class="w-10 h-10 rounded-full bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400 flex-shrink-0 mt-1">
                         <i class="fas fa-university text-lg"></i>
@@ -237,10 +267,12 @@
             </div>
         </section>
 
+        <!-- Fixed Contact Section (Tighter Left Column & Config Variables) -->
         <section id="contact" class="scroll-mt-24 reveal">
             <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-8 shadow-sm">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
                     
+                    <!-- Left Column: Tightened Spacing -->
                     <div class="space-y-4">
                         <div>
                             <h2 class="text-2xl font-bold text-zinc-900 dark:text-zinc-50 mb-2">Let's Connect</h2>
@@ -249,23 +281,24 @@
                             </p>
                         </div>
                         <div class="space-y-3 pt-2 border-t border-zinc-100 dark:border-zinc-800">
-                            <a href="mailto:sainathwade1999@gmail.com" class="flex items-center gap-3 text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                            <a href="#" data-set-mailto="email" class="flex items-center gap-3 text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
                                 <div class="w-9 h-9 rounded-full bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400"><i class="fas fa-envelope text-sm"></i></div>
-                                <span class="text-sm font-medium">sainathwade1999@gmail.com</span>
+                                <span class="text-sm font-medium" data-set-text="email"></span>
                             </a>
-                            <a href="tel:+919766271154" class="flex items-center gap-3 text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                            <a href="#" data-set-tel="phone" class="flex items-center gap-3 text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
                                 <div class="w-9 h-9 rounded-full bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400"><i class="fas fa-phone text-sm"></i></div>
-                                <span class="text-sm font-medium">+91 9766271154</span>
+                                <span class="text-sm font-medium" data-set-text="phone"></span>
                             </a>
                             <div class="flex items-center gap-3 text-zinc-700 dark:text-zinc-300">
                                 <div class="w-9 h-9 rounded-full bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400"><i class="fas fa-map-marker-alt text-sm"></i></div>
-                                <span class="text-sm font-medium">Pune, India</span>
+                                <span class="text-sm font-medium" data-set-text="location"></span>
                             </div>
                         </div>
                     </div>
 
+                    <!-- Right Column: Form with AJAX submission -->
                     <div>
-                        <form id="ajaxContactForm" action="https://formspree.io/f/xlgygbzg" method="POST" class="space-y-5">
+                        <form id="ajaxContactForm" action="" method="POST" class="space-y-5">
                             <div>
                                 <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-1.5">Full Name</label>
                                 <input type="text" name="name" id="name" required minlength="2" placeholder="e.g., John Smith" class="w-full bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 dark:focus:border-indigo-400 transition-all placeholder:text-zinc-400 dark:placeholder:text-zinc-600">
@@ -296,19 +329,58 @@
                 &copy; 2026 Sainath Wade. Engineered for quality.
             </p>
             <div class="flex gap-4 text-sm text-zinc-400">
-                <a href="https://linkedin.com/in/sainathwade-qa" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                <a href="#" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="GitHub"><i class="fab fa-github"></i></a>
-                <a href="mailto:sainathwade1999@gmail.com" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="#" data-set-href="linkedinUrl" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" data-set-href="githubUrl" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" data-set-mailto="email" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
+    <!-- Go to Top FAB -->
     <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full shadow-lg shadow-indigo-600/30 flex items-center justify-center transition-all duration-300 opacity-0 pointer-events-none translate-y-4 z-50" aria-label="Back to Top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
+    <!-- Core Scripts -->
     <script>
-        // Theme Toggle Logic
+        // ==========================================
+        // DYNAMIC CONFIGURATION INJECTOR
+        // ==========================================
+        document.addEventListener("DOMContentLoaded", () => {
+            // Update simple text elements
+            document.querySelectorAll('[data-set-text]').forEach(el => {
+                const key = el.getAttribute('data-set-text');
+                if (CONFIG[key]) el.textContent = CONFIG[key];
+            });
+
+            // Update standard href links (GitHub, LinkedIn, Resume)
+            document.querySelectorAll('[data-set-href]').forEach(el => {
+                const key = el.getAttribute('data-set-href');
+                if (CONFIG[key]) el.href = CONFIG[key];
+            });
+
+            // Update Mailto links
+            document.querySelectorAll('[data-set-mailto]').forEach(el => {
+                const key = el.getAttribute('data-set-mailto');
+                if (CONFIG[key]) el.href = `mailto:${CONFIG[key]}`;
+            });
+
+            // Update Phone tel: links (stripping spaces for standard formatting)
+            document.querySelectorAll('[data-set-tel]').forEach(el => {
+                const key = el.getAttribute('data-set-tel');
+                if (CONFIG[key]) el.href = `tel:${CONFIG[key].replace(/\s+/g, '')}`;
+            });
+
+            // Set Formspree Endpoint
+            const contactForm = document.getElementById('ajaxContactForm');
+            if (contactForm && CONFIG.formspreeId) {
+                contactForm.action = `https://formspree.io/f/${CONFIG.formspreeId}`;
+            }
+        });
+
+        // ==========================================
+        // THEME TOGGLE LOGIC
+        // ==========================================
         const toggleButton = document.getElementById('theme-toggle');
         const htmlElement = document.documentElement;
 
@@ -328,7 +400,9 @@
             }
         });
 
-        // Back to Top Logic
+        // ==========================================
+        // BACK TO TOP LOGIC
+        // ==========================================
         const backToTopBtn = document.getElementById('back-to-top');
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
@@ -343,18 +417,23 @@
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
-        // Scroll Reveal Animation Logic
+        // ==========================================
+        // SCROLL REVEAL LOGIC
+        // ==========================================
         const obs = new IntersectionObserver(entries => {
             entries.forEach(e => {
                 if(e.isIntersecting) { e.target.classList.add('active'); }
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        
         document.querySelectorAll('.reveal').forEach((el, i) => {
             el.style.transitionDelay = (i % 3) * 0.1 + 's';
             obs.observe(el);
         });
 
-        // AJAX Form Submission
+        // ==========================================
+        // AJAX FORM SUBMISSION
+        // ==========================================
         const contactForm = document.getElementById('ajaxContactForm');
         if (contactForm) {
             contactForm.addEventListener('submit', async (e) => {
