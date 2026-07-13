@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" class="dark scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sainath Wade | QA Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Smooth, subtle scroll reveal */
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="bg-zinc-50 dark:bg-zinc-950 text-zinc-800 dark:text-zinc-200 font-sans antialiased transition-colors duration-300 selection:bg-indigo-500 selection:text-white relative">
+
+    <nav class="sticky top-0 z-50 bg-white/90 dark:bg-zinc-900/90 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800 px-4 py-3 shadow-sm">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <a href="#" class="font-mono text-sm tracking-wider font-bold text-indigo-600 dark:text-indigo-400 hover:opacity-80 transition-opacity">SW.TESTING //</a>
+            
+            <div class="hidden md:flex items-center gap-6 text-sm font-medium text-zinc-600 dark:text-zinc-300">
+                <a href="#skills" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Skills</a>
+                <a href="#experience" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Experience</a>
+                <a href="#projects" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Projects</a>
+                <a href="#education" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Education</a>
+                <a href="#contact" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">Contact</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+                <button id="theme-toggle" class="p-2 w-9 h-9 flex justify-center items-center rounded-lg border border-zinc-200 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-800 hover:bg-zinc-200 dark:hover:bg-zinc-700 transition-all text-sm" aria-label="Toggle Theme">
+                    <span class="dark:hidden"><i class="fas fa-moon text-indigo-600"></i></span>
+                    <span class="hidden dark:inline"><i class="fas fa-sun text-amber-400"></i></span>
+                </button>
+                <a href="SainathWade_QA.pdf" download class="hidden sm:flex items-center gap-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold px-4 py-2 rounded-lg transition-colors shadow-sm">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="max-w-4xl mx-auto px-4 pt-16 pb-12 reveal">
+        <div class="space-y-4 max-w-3xl">
+            <span class="inline-flex items-center gap-1.5 bg-emerald-500/10 dark:bg-emerald-500/20 text-emerald-700 dark:text-emerald-400 text-xs font-semibold px-3 py-1 rounded-full border border-emerald-500/20 dark:border-emerald-500/30">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span> Active in Pune, India
+            </span>
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-zinc-50">Sainath Wade</h1>
+            <p class="text-xl text-indigo-600 dark:text-indigo-400 font-medium">Quality isn't an accident. It's engineered.</p>
+            <p class="text-zinc-600 dark:text-zinc-400 text-base leading-relaxed">
+                I am a QA Engineer with around 2 years of experience testing web and mobile apps in Agile teams. I focus on finding bugs early, writing reliable automated tests, checking APIs, and making sure software releases go smoothly without breaking existing features.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2 text-sm text-zinc-500 dark:text-zinc-400 items-center">
+                <a href="mailto:sainathwade1999@gmail.com" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-1.5"><i class="fas fa-envelope"></i> sainathwade1999@gmail.com</a>
+                <span class="hidden sm:inline text-zinc-300 dark:text-zinc-700">|</span>
+                <a href="tel:+919766271154" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors flex items-center gap-1.5"><i class="fas fa-phone"></i> +91 9766271154</a>
+                <span class="hidden sm:inline text-zinc-300 dark:text-zinc-700">|</span>
+                <div class="flex gap-3 text-base">
+                    <a href="https://linkedin.com/in/sainathwade-qa" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8 space-y-20">
+
+        <section id="skills" class="scroll-mt-24 reveal">
+            <h2 class="text-xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2 mb-6 text-zinc-900 dark:text-zinc-50 flex items-center gap-2">
+                <i class="fas fa-cube text-indigo-500"></i> Technical Arsenal
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                
+                <div class="bg-white dark:bg-zinc-900 p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm hover:-translate-y-1 transition-transform">
+                    <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-sm tracking-wide uppercase mb-1">Test Automation</h3>
+                    <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-4">Engineering robust UI & E2E frameworks.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-indigo-50 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-500/20 text-xs px-2.5 py-1 rounded font-medium">Playwright (JS)</span>
+                        <span class="bg-indigo-50 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-500/20 text-xs px-2.5 py-1 rounded font-medium">Selenium (Java)</span>
+                        <span class="bg-indigo-50 dark:bg-indigo-500/10 text-indigo-700 dark:text-indigo-300 border border-indigo-100 dark:border-indigo-500/20 text-xs px-2.5 py-1 rounded font-medium">TestNG</span>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-zinc-900 p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm hover:-translate-y-1 transition-transform">
+                    <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-sm tracking-wide uppercase mb-1">API & Databases</h3>
+                    <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-4">Validating payloads and backend integrity.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-500/20 text-xs px-2.5 py-1 rounded font-medium">Postman (REST)</span>
+                        <span class="bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-500/20 text-xs px-2.5 py-1 rounded font-medium">pgAdmin</span>
+                        <span class="bg-emerald-50 dark:bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-500/20 text-xs px-2.5 py-1 rounded font-medium">SQL</span>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-zinc-900 p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm hover:-translate-y-1 transition-transform">
+                    <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-sm tracking-wide uppercase mb-1">Tools & DevOps</h3>
+                    <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-4">Managing deployments and issue lifecycles.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-100 dark:border-amber-500/20 text-xs px-2.5 py-1 rounded font-medium">Azure Pipelines</span>
+                        <span class="bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-100 dark:border-amber-500/20 text-xs px-2.5 py-1 rounded font-medium">JIRA</span>
+                        <span class="bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-100 dark:border-amber-500/20 text-xs px-2.5 py-1 rounded font-medium">Git</span>
+                        <span class="bg-amber-50 dark:bg-amber-500/10 text-amber-700 dark:text-amber-400 border border-amber-100 dark:border-amber-500/20 text-xs px-2.5 py-1 rounded font-medium">JMeter</span>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-zinc-900 p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm hover:-translate-y-1 transition-transform">
+                    <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-sm tracking-wide uppercase mb-1">Testing Methodologies</h3>
+                    <p class="text-xs text-zinc-500 dark:text-zinc-400 mb-4">Strategic approaches to quality assurance.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-rose-50 dark:bg-rose-500/10 text-rose-700 dark:text-rose-400 border border-rose-100 dark:border-rose-500/20 text-xs px-2.5 py-1 rounded font-medium">Functional</span>
+                        <span class="bg-rose-50 dark:bg-rose-500/10 text-rose-700 dark:text-rose-400 border border-rose-100 dark:border-rose-500/20 text-xs px-2.5 py-1 rounded font-medium">Regression</span>
+                        <span class="bg-rose-50 dark:bg-rose-500/10 text-rose-700 dark:text-rose-400 border border-rose-100 dark:border-rose-500/20 text-xs px-2.5 py-1 rounded font-medium">Exploratory</span>
+                        <span class="bg-rose-50 dark:bg-rose-500/10 text-rose-700 dark:text-rose-400 border border-rose-100 dark:border-rose-500/20 text-xs px-2.5 py-1 rounded font-medium">Agile/Scrum</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="experience" class="scroll-mt-24 space-y-6 reveal">
+            <h2 class="text-xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2 text-zinc-900 dark:text-zinc-50 flex items-center gap-2">
+                <i class="fas fa-briefcase text-indigo-500"></i> Work Experience
+            </h2>
+
+            <div class="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm overflow-hidden">
+                <div class="bg-zinc-100 dark:bg-zinc-800/50 px-6 py-4 flex flex-wrap justify-between items-center border-b border-zinc-200 dark:border-zinc-800 gap-2">
+                    <div>
+                        <h3 class="font-bold text-base text-zinc-900 dark:text-zinc-100">QA Engineer &mdash; FindingPi Pvt. Ltd.</h3>
+                        <p class="text-xs text-zinc-500 dark:text-zinc-400 mt-0.5">Pune, India</p>
+                    </div>
+                    <span class="bg-indigo-500/10 dark:bg-indigo-500/20 text-indigo-700 dark:text-indigo-400 text-xs font-semibold px-2.5 py-1 rounded border border-indigo-500/20">May 2024 - Present</span>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-3 text-sm text-zinc-600 dark:text-zinc-400 list-none pl-0">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fas fa-check-circle text-indigo-500 dark:text-indigo-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Worked closely with developers and product managers in an Agile team to test new features from the planning stage all the way to final user testing.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fas fa-check-circle text-indigo-500 dark:text-indigo-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Created automated test scripts using <strong>Playwright (JavaScript)</strong> to quickly test important features, saving hours of manual work during releases.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fas fa-check-circle text-indigo-500 dark:text-indigo-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Tested backend APIs using <strong>Postman</strong> to make sure data requests, responses, and error messages worked correctly between the frontend and database.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fas fa-check-circle text-indigo-500 dark:text-indigo-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Ran SQL queries in <strong>pgAdmin</strong> to check the database directly, ensuring that the information users saw on the screen matched the actual stored data.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fas fa-check-circle text-indigo-500 dark:text-indigo-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Performed basic smoke and sanity testing on staging environments before every launch to catch environment-specific crashes early.</span>
+                        </li>
+                         <li class="flex items-start gap-2.5">
+                            <i class="fas fa-check-circle text-indigo-500 dark:text-indigo-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Tested system notifications to confirm that Emails, WhatsApp messages, and SMS alerts were triggered accurately and sent to the right users.</span>
+                        </li>
+                        <li class="flex items-start gap-2.5">
+                            <i class="fas fa-check-circle text-indigo-500 dark:text-indigo-400 mt-1 flex-shrink-0 text-xs"></i>
+                            <span>Tracked all bugs in <strong>JIRA</strong> with clear steps to reproduce them, and helped developers figure out the root causes to get them fixed faster.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="scroll-mt-24 space-y-6 reveal">
+            <h2 class="text-xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2 text-zinc-900 dark:text-zinc-50 flex items-center gap-2">
+                <i class="fas fa-folder-open text-indigo-500"></i> Project Showcases
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-2 mb-3">
+                            <h3 class="font-bold text-base text-zinc-900 dark:text-zinc-100">Task Management Tool for CAs</h3>
+                            <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 text-[10px] font-bold tracking-wide uppercase px-2 py-0.5 rounded">Playwright</span>
+                        </div>
+                        <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                            Tested a complex workflow tool used by Chartered Accountant firms. Wrote test cases for assigning tasks, changing statuses, and tracking deadlines. Also ran exploratory testing to find weird bugs that were not mentioned in the original design documents.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm p-6 flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="flex justify-between items-start gap-2 mb-3">
+                            <h3 class="font-bold text-base text-zinc-900 dark:text-zinc-100">Timesheet Management System</h3>
+                            <span class="bg-zinc-100 dark:bg-zinc-800 text-zinc-600 dark:text-zinc-400 text-[10px] font-bold tracking-wide uppercase px-2 py-0.5 rounded">Selenium</span>
+                        </div>
+                        <p class="text-sm text-zinc-600 dark:text-zinc-400 leading-relaxed mb-4">
+                            A personal project built to practice test automation. I used <strong>Selenium WebDriver (Java) and TestNG</strong> to write automated tests that check how users enter their work hours, how managers approve them, and how the data is reported.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="scroll-mt-24 reveal">
+            <h2 class="text-xl font-bold border-b border-zinc-200 dark:border-zinc-800 pb-2 mb-6 text-zinc-900 dark:text-zinc-50 flex items-center gap-2">
+                <i class="fas fa-graduation-cap text-indigo-500"></i> Education & Certifications
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <div class="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 p-5 shadow-sm flex items-start gap-4 hover:-translate-y-1 transition-transform">
+                    <div class="w-10 h-10 rounded-full bg-emerald-50 dark:bg-emerald-500/10 flex items-center justify-center text-emerald-600 dark:text-emerald-400 flex-shrink-0 mt-1">
+                        <i class="fas fa-certificate text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-sm">Software Testing Certification</h3>
+                        <p class="text-xs text-zinc-600 dark:text-zinc-400 mt-1">Manual Testing, Automation Testing & API Testing</p>
+                        <span class="inline-block mt-2 text-[10px] font-bold tracking-wider text-zinc-400 uppercase">Completed May 2024</span>
+                    </div>
+                </div>
+
+                <div class="bg-white dark:bg-zinc-900 rounded-xl border border-zinc-200 dark:border-zinc-800 p-5 shadow-sm flex items-start gap-4 hover:-translate-y-1 transition-transform">
+                    <div class="w-10 h-10 rounded-full bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400 flex-shrink-0 mt-1">
+                        <i class="fas fa-university text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-zinc-900 dark:text-zinc-100 text-sm">Bachelor of Engineering (B.E.)</h3>
+                        <p class="text-xs text-zinc-600 dark:text-zinc-400 mt-1">Savitribai Phule Pune University (SPPU)</p>
+                        <span class="inline-block mt-2 text-[10px] font-bold tracking-wider text-zinc-400 uppercase">Graduated 2023</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="scroll-mt-24 reveal">
+            <div class="bg-white dark:bg-zinc-900 rounded-2xl border border-zinc-200 dark:border-zinc-800 p-8 shadow-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <h2 class="text-2xl font-bold text-zinc-900 dark:text-zinc-50 mb-2">Let's Connect</h2>
+                            <p class="text-zinc-600 dark:text-zinc-400 text-sm leading-relaxed">
+                                Whether you're looking for a QA Engineer to join your team, need help with test automation, or just want to talk about software testing—send me a message!
+                            </p>
+                        </div>
+                        <div class="space-y-3 pt-2 border-t border-zinc-100 dark:border-zinc-800">
+                            <a href="mailto:sainathwade1999@gmail.com" class="flex items-center gap-3 text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                                <div class="w-9 h-9 rounded-full bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400"><i class="fas fa-envelope text-sm"></i></div>
+                                <span class="text-sm font-medium">sainathwade1999@gmail.com</span>
+                            </a>
+                            <a href="tel:+919766271154" class="flex items-center gap-3 text-zinc-700 dark:text-zinc-300 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors">
+                                <div class="w-9 h-9 rounded-full bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400"><i class="fas fa-phone text-sm"></i></div>
+                                <span class="text-sm font-medium">+91 9766271154</span>
+                            </a>
+                            <div class="flex items-center gap-3 text-zinc-700 dark:text-zinc-300">
+                                <div class="w-9 h-9 rounded-full bg-indigo-50 dark:bg-indigo-500/10 flex items-center justify-center text-indigo-600 dark:text-indigo-400"><i class="fas fa-map-marker-alt text-sm"></i></div>
+                                <span class="text-sm font-medium">Pune, India</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <form id="ajaxContactForm" action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-5">
+                            <div>
+                                <label for="name" class="block text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-1.5">Full Name</label>
+                                <input type="text" name="name" id="name" required minlength="2" placeholder="e.g., John Smith" class="w-full bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 dark:focus:border-indigo-400 transition-all placeholder:text-zinc-400 dark:placeholder:text-zinc-600">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-1.5">Email Address</label>
+                                <input type="email" name="email" id="email" required placeholder="hello@company.com" class="w-full bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 dark:focus:border-indigo-400 transition-all placeholder:text-zinc-400 dark:placeholder:text-zinc-600">
+                            </div>
+                            <div>
+                                <label for="message" class="block text-xs font-semibold uppercase tracking-wider text-zinc-500 dark:text-zinc-400 mb-1.5">Message</label>
+                                <textarea name="message" id="message" rows="4" required minlength="10" placeholder="How can I help with your testing needs?" class="w-full bg-zinc-50 dark:bg-zinc-950 border border-zinc-200 dark:border-zinc-800 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-indigo-500/50 focus:border-indigo-500 dark:focus:border-indigo-400 transition-all resize-none placeholder:text-zinc-400 dark:placeholder:text-zinc-600"></textarea>
+                            </div>
+                            <button type="submit" id="submitBtn" class="w-full bg-indigo-600 hover:bg-indigo-500 text-white text-sm font-semibold py-3.5 px-4 rounded-lg shadow-md transition-all flex items-center justify-center gap-2">
+                                <span id="btnText">Send Message</span> <i id="btnIcon" class="fas fa-paper-plane text-xs"></i>
+                            </button>
+                            <p id="formStatus" class="text-center text-xs font-semibold h-4 mt-2"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-white dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800 mt-12">
+        <div class="max-w-4xl mx-auto px-4 py-8 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="text-zinc-500 dark:text-zinc-400 text-xs">
+                &copy; 2026 Sainath Wade. Engineered for quality.
+            </p>
+            <div class="flex gap-4 text-sm text-zinc-400">
+                <a href="https://linkedin.com/in/sainathwade-qa" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:sainathwade1999@gmail.com" class="hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors" title="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="fixed bottom-6 right-6 w-12 h-12 bg-indigo-600 hover:bg-indigo-500 text-white rounded-full shadow-lg shadow-indigo-600/30 flex items-center justify-center transition-all duration-300 opacity-0 pointer-events-none translate-y-4 z-50" aria-label="Back to Top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Theme Toggle Logic
+        const toggleButton = document.getElementById('theme-toggle');
+        const htmlElement = document.documentElement;
+
+        if (localStorage.getItem('theme') === 'light') {
+            htmlElement.classList.remove('dark');
+        } else {
+            htmlElement.classList.add('dark');
+        }
+
+        toggleButton.addEventListener('click', () => {
+            if (htmlElement.classList.contains('dark')) {
+                htmlElement.classList.remove('dark');
+                localStorage.setItem('theme', 'light');
+            } else {
+                htmlElement.classList.add('dark');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+
+        // Back to Top Logic
+        const backToTopBtn = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+                backToTopBtn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+            } else {
+                backToTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+                backToTopBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+            }
+        });
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Scroll Reveal Animation Logic
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => {
+                if(e.isIntersecting) { e.target.classList.add('active'); }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+        document.querySelectorAll('.reveal').forEach((el, i) => {
+            el.style.transitionDelay = (i % 3) * 0.1 + 's';
+            obs.observe(el);
+        });
+
+        // AJAX Form Submission
+        const contactForm = document.getElementById('ajaxContactForm');
+        if (contactForm) {
+            contactForm.addEventListener('submit', async (e) => {
+                e.preventDefault();
+                
+                const btn = document.getElementById('submitBtn');
+                const btnText = document.getElementById('btnText');
+                const btnIcon = document.getElementById('btnIcon');
+                const statusMessage = document.getElementById('formStatus');
+                
+                // Loading state
+                btn.disabled = true;
+                btn.classList.add('opacity-75', 'cursor-wait');
+                btnText.textContent = 'Sending...';
+                btnIcon.className = 'fas fa-spinner fa-spin text-xs';
+                statusMessage.textContent = '';
+                
+                try {
+                    const response = await fetch(contactForm.action, {
+                        method: 'POST',
+                        body: new FormData(contactForm),
+                        headers: { 'Accept': 'application/json' }
+                    });
+                    
+                    if (response.ok) {
+                        // Success state
+                        btnText.textContent = 'Message Sent!';
+                        btnIcon.className = 'fas fa-check text-xs';
+                        statusMessage.textContent = "Thanks! I'll be in touch shortly.";
+                        statusMessage.className = "text-center text-xs font-semibold h-4 mt-2 text-emerald-500";
+                        contactForm.reset();
+                        
+                        // Reset button after 3 seconds
+                        setTimeout(() => {
+                            btn.disabled = false;
+                            btn.classList.remove('opacity-75', 'cursor-wait');
+                            btnText.textContent = 'Send Message';
+                            btnIcon.className = 'fas fa-paper-plane text-xs';
+                            statusMessage.textContent = '';
+                        }, 3000);
+                    } else {
+                        throw new Error();
+                    }
+                } catch (error) {
+                    // Error state
+                    btn.disabled = false;
+                    btn.classList.remove('opacity-75', 'cursor-wait');
+                    btnText.textContent = 'Send Message';
+                    btnIcon.className = 'fas fa-paper-plane text-xs';
+                    statusMessage.textContent = 'Oops! There was a problem. Please email me directly.';
+                    statusMessage.className = "text-center text-xs font-semibold h-4 mt-2 text-red-500";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
