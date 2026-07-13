@@ -374,7 +374,8 @@
             // Set Formspree Endpoint
             const contactForm = document.getElementById('ajaxContactForm');
             if (contactForm && CONFIG.formspreeId) {
-                contactForm.action = `https://formspree.io/f/${CONFIG.formspreeId}`;
+                contactForm.action = `${CONFIG.formspreeId}`;
+                contactForm.method = "POST";
             }
         });
 
